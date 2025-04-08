@@ -1,1 +1,176 @@
-const _0x10756a=_0x8c71;(function(_0x11e695,_0xf4291d){const _0xe53cc8=_0x8c71,_0x23f750=_0x11e695();while(!![]){try{const _0x53e38f=-parseInt(_0xe53cc8(0x170))/0x1+parseInt(_0xe53cc8(0x167))/0x2*(parseInt(_0xe53cc8(0x154))/0x3)+-parseInt(_0xe53cc8(0x14c))/0x4*(parseInt(_0xe53cc8(0x14a))/0x5)+-parseInt(_0xe53cc8(0x15d))/0x6+parseInt(_0xe53cc8(0x163))/0x7*(parseInt(_0xe53cc8(0x171))/0x8)+parseInt(_0xe53cc8(0x153))/0x9*(-parseInt(_0xe53cc8(0x15a))/0xa)+parseInt(_0xe53cc8(0x166))/0xb;if(_0x53e38f===_0xf4291d)break;else _0x23f750['push'](_0x23f750['shift']());}catch(_0x59c47f){_0x23f750['push'](_0x23f750['shift']());}}}(_0xf4db,0xa05ab));const options=document[_0x10756a(0x150)](_0x10756a(0x140)),attemptedCount=document['getElementById'](_0x10756a(0x152)),correctCount=document[_0x10756a(0x173)]('correctCount'),wrongCount=document['getElementById']('wrongCount'),resetButton=document['getElementById'](_0x10756a(0x161)),message=document[_0x10756a(0x173)](_0x10756a(0x156)),modeToggle=document[_0x10756a(0x173)](_0x10756a(0x16f)),reportCard=document['getElementById'](_0x10756a(0x155));function _0xf4db(){const _0x284ba2=['classList','data-question','question','25015LwJaqZ','correct','148BJQsIg','true','length','addEventListener','querySelectorAll','.option.selected[data-question=\x22','attemptedCount','136287lMxZDT','153AqpoLA','reportCard','message','Excellent\x20work!','change','click','310opWyWv','replace','.option[data-correct=\x22true\x22]','2572638akAYjy','wrong','.question','remove','resetButton','style','7187236UxxNow','querySelector','selected','1473835NRsUqX','25546vmfwhu','auto','pointerEvents','block','getAttribute','.explanation','green','textContent','modeToggle','72028yhXaPU','8ktMENG','data-correct','getElementById','explanation','Keep\x20Practicing!','add','none','.option','display','checked','forEach','Good\x20job!','#007acc','color'];_0xf4db=function(){return _0x284ba2;};return _0xf4db();}function _0x8c71(_0x22621f,_0x5e295d){const _0xf4dbf1=_0xf4db();return _0x8c71=function(_0x8c7183,_0x25c748){_0x8c7183=_0x8c7183-0x140;let _0x30845b=_0xf4dbf1[_0x8c7183];return _0x30845b;},_0x8c71(_0x22621f,_0x5e295d);}let totalQuestions=0x0,correctAnswers=0x0;function updateMessage(){const _0x1eb1cd=_0x10756a,_0x218e6e=totalQuestions>0x0?correctAnswers/totalQuestions*0x64:0x0;if(_0x218e6e===0x64)message['textContent']=_0x1eb1cd(0x157),message[_0x1eb1cd(0x162)]['color']=_0x1eb1cd(0x16d);else _0x218e6e>=0x46?(message['textContent']='Good\x20job!',message[_0x1eb1cd(0x162)][_0x1eb1cd(0x146)]='blue'):(message[_0x1eb1cd(0x16e)]=_0x1eb1cd(0x175),message['style'][_0x1eb1cd(0x146)]=_0x1eb1cd(0x145));}function showAllAnswers(){const _0x4ade14=_0x10756a;options[_0x4ade14(0x143)](_0x2cd1c6=>{const _0x3b31b4=_0x4ade14,_0x1d9be2=_0x2cd1c6[_0x3b31b4(0x16b)]('data-question'),_0x57fd97=_0x2cd1c6['getAttribute'](_0x3b31b4(0x172))===_0x3b31b4(0x14d),_0x38a056=_0x3b31b4(0x174)+_0x1d9be2[_0x3b31b4(0x15b)](_0x3b31b4(0x149),'');_0x57fd97&&_0x2cd1c6['classList'][_0x3b31b4(0x176)](_0x3b31b4(0x14b)),_0x2cd1c6['style']['pointerEvents']=_0x3b31b4(0x177);});const _0x5a35be=document[_0x4ade14(0x150)]('.explanation');_0x5a35be[_0x4ade14(0x143)](_0x1afb80=>{const _0xeb35d6=_0x4ade14;_0x1afb80[_0xeb35d6(0x162)][_0xeb35d6(0x141)]='block';}),reportCard['style']['display']=_0x4ade14(0x177);const _0x35127c=document[_0x4ade14(0x150)](_0x4ade14(0x15c))[_0x4ade14(0x14e)],_0x54de17=document[_0x4ade14(0x150)](_0x4ade14(0x15f))[_0x4ade14(0x14e)];attemptedCount[_0x4ade14(0x16e)]=_0x54de17,correctCount[_0x4ade14(0x16e)]=_0x35127c,wrongCount[_0x4ade14(0x16e)]=_0x54de17-_0x35127c;if(_0x35127c===_0x54de17)message['textContent']='Excellent\x20work!',message[_0x4ade14(0x162)][_0x4ade14(0x146)]=_0x4ade14(0x16d);else _0x35127c/_0x54de17*0x64>=0x46?(message[_0x4ade14(0x16e)]=_0x4ade14(0x144),message[_0x4ade14(0x162)][_0x4ade14(0x146)]='blue'):(message[_0x4ade14(0x16e)]=_0x4ade14(0x175),message[_0x4ade14(0x162)][_0x4ade14(0x146)]=_0x4ade14(0x145));}function switchToPractice(){const _0xe7c3f3=_0x10756a;options[_0xe7c3f3(0x143)](_0x49c225=>{const _0x396609=_0xe7c3f3;_0x49c225[_0x396609(0x162)][_0x396609(0x169)]=_0x396609(0x168),_0x49c225[_0x396609(0x147)]['remove'](_0x396609(0x14b),_0x396609(0x15e),_0x396609(0x165));const _0x46d7c8=_0x49c225['getAttribute'](_0x396609(0x148)),_0x4603dd=_0x396609(0x174)+_0x46d7c8[_0x396609(0x15b)]('question',''),_0x8363e4=document[_0x396609(0x173)](_0x4603dd);_0x8363e4&&(_0x8363e4[_0x396609(0x162)][_0x396609(0x141)]=_0x396609(0x177));}),reportCard['style'][_0xe7c3f3(0x141)]=_0xe7c3f3(0x16a),attemptedCount[_0xe7c3f3(0x16e)]=totalQuestions,correctCount['textContent']=correctAnswers,wrongCount[_0xe7c3f3(0x16e)]=totalQuestions-correctAnswers,updateMessage();}options[_0x10756a(0x143)](_0x143bda=>{const _0x2c93c4=_0x10756a;_0x143bda[_0x2c93c4(0x14f)]('click',()=>{const _0x33401f=_0x2c93c4;if(modeToggle[_0x33401f(0x142)])return;const _0x23aa86=_0x143bda['getAttribute']('data-question'),_0xac1a89=_0x143bda[_0x33401f(0x16b)](_0x33401f(0x172))===_0x33401f(0x14d),_0x173bd4=_0x33401f(0x174)+_0x23aa86[_0x33401f(0x15b)]('question',''),_0x307bf2=document[_0x33401f(0x164)](_0x33401f(0x151)+_0x23aa86+'\x22]');!_0x307bf2&&(totalQuestions++,_0xac1a89&&correctAnswers++,options['forEach'](_0x4e0a92=>{const _0x75fee6=_0x33401f;_0x4e0a92[_0x75fee6(0x16b)](_0x75fee6(0x148))===_0x23aa86&&(_0x4e0a92[_0x75fee6(0x162)][_0x75fee6(0x169)]=_0x75fee6(0x177));}));options['forEach'](_0x22eacc=>{const _0x40c6e2=_0x33401f;_0x22eacc['getAttribute'](_0x40c6e2(0x148))===_0x23aa86&&(_0x22eacc[_0x40c6e2(0x147)][_0x40c6e2(0x160)]('selected',_0x40c6e2(0x14b),'wrong'),_0x22eacc===_0x143bda&&(_0x22eacc[_0x40c6e2(0x147)][_0x40c6e2(0x176)](_0x40c6e2(0x165)),_0xac1a89?_0x22eacc[_0x40c6e2(0x147)][_0x40c6e2(0x176)](_0x40c6e2(0x14b)):_0x22eacc[_0x40c6e2(0x147)][_0x40c6e2(0x176)](_0x40c6e2(0x15e))));});!_0xac1a89&&options[_0x33401f(0x143)](_0x15b69e=>{const _0x2ca8ee=_0x33401f;_0x15b69e['getAttribute'](_0x2ca8ee(0x148))===_0x23aa86&&_0x15b69e[_0x2ca8ee(0x16b)]('data-correct')===_0x2ca8ee(0x14d)&&_0x15b69e[_0x2ca8ee(0x147)]['add']('correct');});const _0x1643b0=document[_0x33401f(0x173)](_0x173bd4);_0x1643b0&&(_0x1643b0[_0x33401f(0x162)][_0x33401f(0x141)]=_0x33401f(0x16a)),attemptedCount[_0x33401f(0x16e)]=totalQuestions,correctCount[_0x33401f(0x16e)]=correctAnswers,wrongCount[_0x33401f(0x16e)]=totalQuestions-correctAnswers,updateMessage();});}),resetButton[_0x10756a(0x14f)](_0x10756a(0x159),()=>{const _0x35d84f=_0x10756a;totalQuestions=0x0,correctAnswers=0x0,options[_0x35d84f(0x143)](_0x11736c=>{const _0xd7498d=_0x35d84f;_0x11736c[_0xd7498d(0x147)]['remove'](_0xd7498d(0x165),_0xd7498d(0x14b),_0xd7498d(0x15e)),_0x11736c[_0xd7498d(0x162)][_0xd7498d(0x169)]=_0xd7498d(0x168);});const _0x569c2f=document[_0x35d84f(0x150)](_0x35d84f(0x16c));_0x569c2f[_0x35d84f(0x143)](_0x5712e1=>{const _0x358524=_0x35d84f;_0x5712e1[_0x358524(0x162)]['display']=_0x358524(0x177);}),attemptedCount[_0x35d84f(0x16e)]='0',correctCount[_0x35d84f(0x16e)]='0',wrongCount[_0x35d84f(0x16e)]='0',message[_0x35d84f(0x16e)]='Keep\x20Practicing!',message[_0x35d84f(0x162)][_0x35d84f(0x146)]=_0x35d84f(0x145),modeToggle['checked']&&(modeToggle[_0x35d84f(0x142)]=![],switchToPractice());}),modeToggle[_0x10756a(0x14f)](_0x10756a(0x158),()=>{const _0x574d48=_0x10756a;modeToggle[_0x574d48(0x142)]?showAllAnswers():switchToPractice();});
+  const options = document.querySelectorAll('.option');
+  const attemptedCount = document.getElementById('attemptedCount');
+  const correctCount = document.getElementById('correctCount');
+  const wrongCount = document.getElementById('wrongCount');
+  const resetButton = document.getElementById('resetButton');
+  const message = document.getElementById('message');
+  const modeToggle = document.getElementById('modeToggle');
+  const reportCard = document.getElementById('reportCard');
+  let totalQuestions = 0;
+  let correctAnswers = 0;
+  // Function to update the report card message
+  function updateMessage() {
+    const percentage = totalQuestions > 0 ? (correctAnswers / totalQuestions) * 100 : 0;
+    if (percentage === 100) {
+      message.textContent = "Excellent work!";
+      message.style.color = "green";
+    } else if (percentage >= 70) {
+      message.textContent = "Good job!";
+      message.style.color = "blue";
+    } else {
+      message.textContent = "Keep Practicing!";
+      message.style.color = "#007acc";
+    }
+  }
+  // Function to show all correct answers
+  function showAllAnswers() {
+    options.forEach(option => {
+      const questionId = option.getAttribute('data-question');
+      const isCorrect = option.getAttribute('data-correct') === 'true';
+      const explanationId = 'explanation' + questionId.replace('question', '');
+      if (isCorrect) {
+        option.classList.add('correct');
+      }
+      // Disable all options
+      option.style.pointerEvents = 'none';
+    });
+    // Show all explanations
+    const explanations = document.querySelectorAll('.explanation');
+    explanations.forEach(exp => {
+      exp.style.display = 'block';
+    });
+    // Hide the report card
+    reportCard.style.display = 'none';
+    // Update report card counts based on correct answers
+    const allCorrect = document.querySelectorAll('.option[data-correct="true"]').length;
+    const allQuestions = document.querySelectorAll('.question').length;
+    attemptedCount.textContent = allQuestions;
+    correctCount.textContent = allCorrect;
+    wrongCount.textContent = allQuestions - allCorrect;
+    // Update the message
+    if (allCorrect === allQuestions) {
+      message.textContent = "Excellent work!";
+      message.style.color = "green";
+    } else if ((allCorrect / allQuestions) * 100 >= 70) {
+      message.textContent = "Good job!";
+      message.style.color = "blue";
+    } else {
+      message.textContent = "Keep Practicing!";
+      message.style.color = "#007acc";
+    }
+  }
+  // Function to switch to Practice mode
+  function switchToPractice() {
+    options.forEach(option => {
+      option.style.pointerEvents = 'auto';
+      // Reset classes
+      option.classList.remove('correct', 'wrong', 'selected');
+      // Hide explanations
+      const questionId = option.getAttribute('data-question');
+      const explanationId = 'explanation' + questionId.replace('question', '');
+      const explanationDiv = document.getElementById(explanationId);
+      if (explanationDiv) {
+        explanationDiv.style.display = 'none';
+      }
+    });
+    // Show the report card
+    reportCard.style.display = 'block';
+    // Reset counts and message
+    attemptedCount.textContent = totalQuestions;
+    correctCount.textContent = correctAnswers;
+    wrongCount.textContent = totalQuestions - correctAnswers;
+    updateMessage();
+  }
+  options.forEach(option => {
+    option.addEventListener('click', () => {
+      if (modeToggle.checked) {
+        // If in Show All Answers mode, do nothing
+        return;
+      }
+      const questionId = option.getAttribute('data-question');
+      const isCorrect = option.getAttribute('data-correct') === 'true';
+      const explanationId = 'explanation' + questionId.replace('question', '');
+      // Check if any option for this question is already selected
+      const previouslySelected = document.querySelector(`.option.selected[data-question="${questionId}"]`);
+      if (!previouslySelected) {
+        totalQuestions++;
+        if (isCorrect) {
+          correctAnswers++;
+        }
+        // Disable all options for the current question
+        options.forEach(o => {
+          if (o.getAttribute('data-question') === questionId) {
+            o.style.pointerEvents = 'none'; // Disables further clicks
+          }
+        });
+      }
+      // Remove any previous selections and apply correct/wrong classes
+      options.forEach(o => {
+        if (o.getAttribute('data-question') === questionId) {
+          o.classList.remove('selected', 'correct', 'wrong');
+          if (o === option) {
+            o.classList.add('selected');
+            if (isCorrect) {
+              o.classList.add('correct');
+            } else {
+              o.classList.add('wrong');
+            }
+          }
+        }
+      });
+      // Highlight the correct answer if the selected option is wrong
+      if (!isCorrect) {
+        options.forEach(o => {
+          if (o.getAttribute('data-question') === questionId && o.getAttribute('data-correct') === 'true') {
+            o.classList.add('correct');
+          }
+        });
+      }
+      // Show the explanation
+      const explanationDiv = document.getElementById(explanationId);
+      if (explanationDiv) {
+        explanationDiv.style.display = 'block';
+      }
+      // Update the counts
+      attemptedCount.textContent = totalQuestions;
+      correctCount.textContent = correctAnswers;
+      wrongCount.textContent = totalQuestions - correctAnswers;
+      // Update the message based on performance
+      updateMessage();
+    });
+  });
+  // Reset button logic
+  resetButton.addEventListener('click', () => {
+    totalQuestions = 0;
+    correctAnswers = 0;
+    // Reset all options and counts
+    options.forEach(option => {
+      option.classList.remove('selected', 'correct', 'wrong');
+      option.style.pointerEvents = 'auto'; // Re-enable clicking for all options
+    });
+    // Hide all explanations
+    const explanations = document.querySelectorAll('.explanation');
+    explanations.forEach(exp => {
+      exp.style.display = 'none';
+    });
+    attemptedCount.textContent = '0';
+    correctCount.textContent = '0';
+    wrongCount.textContent = '0';
+    message.textContent = 'Keep Practicing!';
+    message.style.color = "#007acc";
+    // Reset toggle to Practice mode if it was in Show All Answers mode
+    if (modeToggle.checked) {
+      modeToggle.checked = false;
+      switchToPractice();
+    }
+  });
+  // Toggle switch logic
+  modeToggle.addEventListener('change', () => {
+    if (modeToggle.checked) {
+      // Switch to Show All Answers mode
+      showAllAnswers();
+    } else {
+      // Switch to Practice mode
+      switchToPractice();
+    }
+  });
